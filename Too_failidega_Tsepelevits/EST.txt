@@ -1,0 +1,75 @@
+Liugle
+Mõtle
+Muuda efekti
+Pööra
+Kui klõpsata
+Korda lõpatult
+hüpotee
+Paaris
+Paaritu
+Üles laadima 
+Alla laadima
+Õpimapp
+Kopeerima
+Kleebima
+Salasõna
+Sündmus
+Muutuja
+Andur
+Klõpsama
+Tehted
+Muuda suurust
+Taust
+Võta suureseks
+Alusta heli
+Tühik Teade
+Puudutama
+Klahv
+Pikkua
+Näita
+Peida
+Looma
+Suund
+Lava
+Oota
+Algoritm
+Täpne
+Ühetahenduslik
+Lõplik
+Lahendus
+Üldine
+Mitu
+Efektiivne
+Korrektne vastus
+Plokkskeem
+Ristkülik
+Tegevus
+Rööpkülik
+Sisend/Väljund
+Romb
+Tingimus
+Ovaal
+Algus/Lõpp
+Nool
+Programm
+Sisend ja Väljund
+Käsk
+Programmeerimiskeel
+Süntaks
+Semantika/Tähendusõpetus
+Masinakeel
+Assemblerkeel
+Masinkäsk
+Räisarv
+Ujukomaarv
+Sõne/tekst
+Tõeväärtus
+Kommentaar
+Viga
+Tehe
+Tõene
+Väär
+Hargnemine
+Haru
+Taane
+Avaldus
