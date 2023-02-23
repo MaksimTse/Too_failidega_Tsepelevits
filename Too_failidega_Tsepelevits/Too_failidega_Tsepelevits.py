@@ -1,7 +1,5 @@
 from OmaMoodul import *
 laused=[]
-RUS=[]
-EST=[] 
 while True:
     menu=input("""
 1-loeme failist \n2-Salvestame failisse \n3-Sõnade tõlkimine \n4-Vaata sõnastikku
@@ -29,6 +27,6 @@ while True:
         for line in laused:
             print(line)
     elif menu=="5":
-        paranda("rus.txt","est.txt")
+        parandama("rus.txt","est.txt")
     elif menu=="6":
         harjutus("rus.txt","est.txt")
