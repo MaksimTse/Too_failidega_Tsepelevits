@@ -1,7 +1,7 @@
 from OmaMoodul import *
 laused=[]
 while True:
-    menu=input('1-loeme failist \n2-Salvestame failisse \n3-Sõnade tõlkimine \n4-Vaata sõnastikku5-Parandage viga sõnastikus\n6-Harjutus\n')
+    menu=input('1-loeme failist \n2-Salvestame failisse \n3-Sõnade tõlkimine \n4-Vaata sõnastikku \n5-Parandage viga sõnastikus \n6-Test\n')
 
     while menu.isdigit()==False:
         menu=input('Kirjuta ainult need numbrid, mis on ')
@@ -27,4 +27,4 @@ while True:
     elif menu=='5':
         parandama('rus.txt","est.txt')
     elif menu=='6':
-        harjutus('rus.txt","est.txt')
+        Test('rus.txt","est.txt')
