@@ -113,7 +113,7 @@ def parandama(fail1:str,fail2:str):
         f.writelines(est)
         f.close()
 
-def harjutus(fail1:str,fail2:str):
+def Test(fail1:str,fail2:str):
     rus=[] 
     est=[]
     game=[] 
@@ -137,8 +137,8 @@ def harjutus(fail1:str,fail2:str):
         n=input('Mitu? ')
 
         if keel=='vene':
-            har=rus[num] 
-            tolk=input(f'Mis on {har}? ') 
+            test=rus[num] 
+            tolk=input(f'Mis on {test}? ') 
             if tolk==est[num]:
                 game.append(f'{i+1} {keel} mäng - võit')
                 print('Õige') 
@@ -148,8 +148,8 @@ def harjutus(fail1:str,fail2:str):
                 print('Vale')
                 k+=1
         else:
-            har=est[num] 
-            tolk=input(f'Mis on {har}? ') 
+            test=est[num] 
+            tolk=input(f'Mis on {test}? ') 
             if tolk==rus[num]:
                 game.append(f'{i+1} {keel} mäng - Õige')
                 print("Õige")
