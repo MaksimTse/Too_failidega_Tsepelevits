@@ -1,7 +1,7 @@
 from OmaMoodul import *
 laused=[]
 while True:
-    menu=input('1-loeme failist \n2-Salvestame failisse \n3-Sõnade tõlkimine \n4-Vaata sõnastikku \n5-Parandage viga sõnastikus \n6-Test\n')
+    menu=input('1-loe failist \n2-Salvesta failisse \n3-Sõnade tõlke \n4-näitab sõnastik \n5-Paranda viga sõnastikus \n6-Test\n')
 
     while menu.isdigit()==False:
         menu=input('Kirjuta ainult need numbrid, mis on ')
