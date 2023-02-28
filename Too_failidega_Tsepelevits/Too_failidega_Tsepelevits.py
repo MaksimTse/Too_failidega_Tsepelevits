@@ -13,9 +13,9 @@ while True:
     elif menu=='2':
         line=input('Lisa lause: ')
         laused.append(line)
-        Kirjuta_failisse("Laused.txt",laused)
+        Kirjuta_failisse('Laused.txt',laused)
     elif menu=='3':
-        tolk('rus.txt","est.txt')
+        tolk('rus.txt','est.txt')
     elif menu=='4':
         laused=Loe_failist('rus.txt')
         for line in laused:
@@ -25,6 +25,6 @@ while True:
         for line in laused:
             print(line)
     elif menu=='5':
-        parandama('rus.txt","est.txt')
+        parandama('rus.txt','est.txt')
     elif menu=='6':
-        Test('rus.txt","est.txt')
+        Test('rus.txt','est.txt')
