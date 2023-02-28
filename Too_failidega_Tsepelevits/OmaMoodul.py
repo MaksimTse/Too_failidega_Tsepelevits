@@ -1,7 +1,6 @@
 from random import *
 def Loe_failist(fail:str)->list:
     """Loeme failist
-
     """
     f=open(fail,'r',encoding='utf-8-sig')
     jarjend=[]
@@ -126,7 +125,14 @@ def Test(fail1:str,fail2:str):
     f=open(fail2,'r',encoding='utf-8-sig')
     for line in f:
         est.append(line.strip()) 
-    f.close() 
+    f.close()
+    try:
+        n=int(input('Kui palju me mängime? '))
+        m=n-n
+    except:
+        ValueError
+        n=int(input('Ainult numbrid palun! '))
+        m=n-n
     for i in range(len(rus)):
         num=randint(0,(len(rus)-1))
         while num in a:
@@ -134,33 +140,40 @@ def Test(fail1:str,fail2:str):
         keel=input('Mis keeles me harjutame? ( vene või eesti) ').lower()
         while keel not in ['vene','eesti']:
             keel=input('Ainult vene või eesti ').lower() 
-        n=input('Mitu? ')
-
         if keel=='vene':
             test=rus[num] 
-            tolk=input(f'Mis on {test}? ') 
+            tolk=input(f'Mis on {test}? ')
             if tolk==est[num]:
-                game.append(f'{i+1} {keel} mäng - võit')
+                game.append(f'number {i+1} {keel} mäng - Õige')
                 print('Õige') 
                 v+=1
+                m+=1
             else:
-                game.append(f'{i+1}, {keel} mäng - Vale') 
+                game.append(f'number {i+1} {keel} mäng - Vale') 
                 print('Vale')
                 k+=1
+                m+=1
+            if m==n:
+                break
         else:
             test=est[num] 
             tolk=input(f'Mis on {test}? ') 
             if tolk==rus[num]:
-                game.append(f'{i+1} {keel} mäng - Õige')
+                game.append(f'number {i+1} {keel} mäng - Õige')
                 print("Õige")
                 v+=1
+                m+=1
             else:
-                game.append(f'{i+1}, {keel} mäng - Vale') 
+                game.append(f'number {i+1} {keel} mäng - Vale') 
                 print('Vale')
                 k+=1
+                m+=1
+            if m==n:
+                break
+                
         a.append(num)
     print(game)
-    resV=round((v/len(rus)*100),2)
-    resK=round((k/len(rus)*100),2)
+    resV=round((v/n*100),2)
+    resK=round((k/n*100),2)
     print(f'Õige protsent - {resV}%')
     print(f'Vale protsent - {resK}%')
